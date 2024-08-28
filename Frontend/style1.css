@@ -1,0 +1,163 @@
+/* Code by Get Code Snippets - https://getcodesnippets.com/ */
+
+/* Google Font  */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+:root {
+  --body: #000020;
+  --black: #000;
+  --white: #fff;
+}
+a {
+  text-decoration: unset;
+}
+body {
+  background-image: url(background-2.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body:before {
+  position: absolute;
+  content: "";
+  background: rgb(0 0 0 / 50%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.form-wrap {
+  position: relative;
+  background: rgb(255 255 255 / 20%);
+  backdrop-filter: blur(10px);
+  min-width: 400px;
+  min-height: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 15px 20px rgb(0 0 0 / 10%);
+}
+.form-wrap .form-title > h2 {
+  color: var(--white);
+}
+
+.form-wrap .switch-form {
+  display: flex;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+.form-wrap .switch-form .form-tab-nav {
+  position: relative;
+  flex: 1;
+  padding: 15px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form-wrap .switch-form .form-tab-nav.active {
+  background: var(--white);
+  color: var(--black);
+}
+.form-wrap .form-tab-content .form-group {
+  position: relative;
+  margin: 0 0 15px;
+}
+.form-wrap .form-tab-content .form-group > i {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+.form-wrap .form-tab-content .form-group > input {
+  background: transparent;
+  color: var(--white);
+  display: block;
+  width: 100%;
+  min-height: 55px;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  padding: 0 45px;
+  outline: unset;
+}
+.form-wrap .form-tab-content .form-group > input::placeholder {
+  color: rgb(255 255 255 / 70%);
+  font-size: 14px;
+  font-weight: 300;
+}
+.form-wrap .form-tab-content .form-group > input:focus {
+  box-shadow: 0 0 20px rgb(255 255 255 / 30%);
+}
+.forgot-pass {
+  text-align: left;
+}
+.forgot-pass > a {
+  color: var(--white);
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+.forgot-pass > a:hover {
+  color: var(--black);
+}
+.form-submit {
+  margin: 20px 0;
+}
+.form-submit > button {
+  display: block;
+  width: 100%;
+  background: var(--white);
+  color: var(--black);
+  padding: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  transition: all 0.3s ease-in-out;
+}
+.form-submit > button:hover {
+  background: rgb(255 255 255 / 30%);
+  color: var(--white);
+  box-shadow: unset;
+}
+.form-signup > p {
+  color: var(--white);
+  font-size: 14px;
+  margin: 0;
+}
+.form-signup > p > a {
+  color: var(--white);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.form-signup > p > a:hover {
+  color: var(--black);
+}
+.form-tab-content {
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  padding: 0 30px;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.68, 0.55, 0.265, 1.55);
+}
+.form-tab-content.active {
+  left: 0;
+  opacity: 1;
+}

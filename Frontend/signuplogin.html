@@ -1,0 +1,84 @@
+<!-- Code by Get Code Snippets - https://getcodesnippets.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register Form</title>
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome 6 Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+<body>
+
+    <div class="form-wrap">
+        <div class="form-title">
+            <h2>Sign In</h2>
+        </div>
+        <div class="switch-form">
+            <a href="javascript:void(0)" class="form-tab-nav active" data-id="signin">Sign In</a>
+            <a href="javascript:void(0)" class="form-tab-nav" data-id="signup">Sign Up</a>
+        </div>
+        <div class="form-flex">
+            <div class="form-tab-content active" id="signin">
+                <form action="">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username or Email">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <div class="form-submit">
+                        <button>LOGIN</button>
+                    </div>
+                    <div class="form-signup">
+                        <p>Not a member? <a href="#">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="form-tab-content" id="signup">
+                <form action="">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username or Email">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="text" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-submit">
+                        <button>REGISTER</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- JS File  -->
+    <link rel="stylesheet" href="script.js">
+
+</body>
+
+</html>
+
