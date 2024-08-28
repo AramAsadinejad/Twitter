@@ -1,1 +1,1 @@
-This is a website based on twitter (X). users can signup and login then tweet.they also can retweet other tweets and reply to the tweets they are mentioned.they can comment and like.I have used DJANGO and VUE.JS to implement this project.
+This is a website based on twitter (X). users can signup and login then tweet what they want.they also can retweet other tweets and reply to the tweets they are mentioned.they can comment and like.I have used DJANGO and VUE.JS to implement this project.
